@@ -6,35 +6,37 @@ class Homepage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: blue,
-      body: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.only(top: 40),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Image.asset(
-                  "assets/images/ava1.png",
-                  width: 100,
-                  height: 100,
-                )
-              ],
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: blue,
+        body: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(top: 40),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Image.asset(
+                    "assets/images/ava1.png",
+                    width: 100,
+                    height: 100,
+                  )
+                ],
+              ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(top: 20),
-            child: Text(
-              "Sabrina Carpenter",
-              style: avaName,
+            Padding(
+              padding: const EdgeInsets.only(top: 20),
+              child: Text(
+                "Sabrina Carpenter",
+                style: avaName,
+              ),
             ),
-          ),
-          Text(
-            "Travel Freelancer",
-            style: avaTitle,
-          )
-        ],
+            Text(
+              "Travel Freelancer",
+              style: avaTitle,
+            )
+          ],
+        ),
       ),
     );
   }
