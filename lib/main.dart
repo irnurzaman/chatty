@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mobile_apps_chatty/home.dart';
+import 'package:mobile_apps_chatty/pages/home.dart';
 
 void main() {
   runApp(const MyApp());
