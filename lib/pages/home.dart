@@ -54,11 +54,11 @@ class Homepage extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(top: 10),
                   child: chatItem(
-                    image: "assets/images/ava2.png",
-                    name: "Joshuer",
-                    lastChat: "Sorry, you’re not my ty...",
-                    time: "Now",
-                  ),
+                      image: "assets/images/ava2.png",
+                      name: "Joshuer",
+                      lastChat: "Sorry, you’re not my ty...",
+                      time: "Now",
+                      read: false),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 10),
@@ -106,13 +106,11 @@ class Homepage extends StatelessWidget {
                 const SizedBox(
                   height: 30,
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    InkWell(
-                      child: Image.asset("assets/images/btn.png"),
-                    ),
-                  ],
+                Center(
+                  child: InkWell(
+                    onTap: () {},
+                    child: Image.asset("assets/images/btn.png"),
+                  ),
                 )
               ]),
             )

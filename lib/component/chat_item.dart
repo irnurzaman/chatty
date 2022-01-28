@@ -1,7 +1,9 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:mobile_apps_chatty/theme.dart';
 
-Widget chatItem({String image = "", String name = "", String lastChat = "", String time = ""}) {
+Widget chatItem({String image = "", String name = "", String lastChat = "", String time = "", bool read = true}) {
   return Row(
     mainAxisAlignment: MainAxisAlignment.start,
     children: [
@@ -21,7 +23,7 @@ Widget chatItem({String image = "", String name = "", String lastChat = "", Stri
             ),
             Text(
               lastChat,
-              style: subtitle,
+              style: read ? subtitle : subtitle.copyWith(color: black),
             )
           ],
         ),
